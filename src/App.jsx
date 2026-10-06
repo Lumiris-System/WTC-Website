@@ -283,26 +283,6 @@ function Legacy() {
   );
 }
 
-function Opinions() {
-  const students = ["BOHIC Axel", "CARRE Victor", "FRAPPA Damien"];
-  return (
-    <section id="opinions" className="section band-paper">
-      <div className="section-head">
-        <span className="section-no">Personal opinion</span>
-        <h2>What the team thinks</h2>
-      </div>
-      <div className="opinions-grid">
-        {students.map((name) => (
-          <blockquote className="opinion" key={name}>
-            <p>Write your personal opinion about the building here.</p>
-            <cite>{name}</cite>
-          </blockquote>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function Footer() {
   return (
     <footer className="footer">
@@ -332,7 +312,6 @@ export default function App() {
       <CostUse />
       <Environment />
       <Legacy />
-      <Opinions />
       <Footer />
     </div>
   );
